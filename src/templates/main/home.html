@@ -1,0 +1,14 @@
+{% extends "layout/base.html" %}
+{% block content %}
+<div class="container py-4">
+  <div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">CS Toolkit</h1>
+      <p class="col-md-8 fs-4">Interchangeable parts for Salesforce.</p>
+    </div>
+  </div>
+  <div class="py-5">
+  {% include 'components/cards.html' %}
+  </div>
+</div>
+{% endblock content %}

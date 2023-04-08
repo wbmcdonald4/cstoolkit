@@ -1,0 +1,23 @@
+{% extends "layout/base.html" %}
+{% block content %}
+<div class="container py-5">
+  <div class="row">
+    <div class="col">
+      <div class="bg-white border-top border-primary border-3 rounded-1 my-3 py-3 px-5 shadow-sm">
+        <h1 class="border-bottom border-primary border-1">Pulse Tool</h1>
+        <p>Pulse Tool is a powerful Salesforce AppExchange product designed to streamline your sales processes and improve your team's productivity. With real-time insights, advanced analytics, and seamless integration with Salesforce, Pulse Tool is the perfect companion for any sales-driven organization.</p>
+        <h1 class="border-bottom border-primary border-1">Installation</h1>
+        <p>Installing the Pulse Tool is quick and easy. Simply click the button below to get started:</p>
+        <a href="https://login.salesforce.com/packagingSetupUI/ipLanding.app?apvId=04tDn000000JJWcIAO" target="_blank" class="btn btn-primary mb-3">Install Pulse Tool</a>
+        <h1 class="border-bottom border-primary border-1">Product Demo</h1>
+        <p>Watch the video below to see Pulse Tool in action and learn how it can revolutionize your sales process:</p>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/8E0J6rnstq4" title="Pulse Tool Demo Video" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    {% include 'components/sidebar.html' %}
+  </div>
+</div>
+{% endblock content %}
+
