@@ -1,0 +1,20 @@
+{% extends "layout/base.html" %}
+{% block content %}
+<div class="container py-5">
+  <div class="row">
+    <div class="col">
+      <div class="bg-white border-top border-primary border-3 rounded-1 my-3 py-3 px-5 shadow-sm">
+        <h1 class="border-bottom border-primary border-1">Install Pulse Tool</h1>
+        <p>Thank you for providing your email. Click the button below to install the Pulse Tool onto your Salesforce instance:</p>
+        <a href="https://login.salesforce.com/packagingSetupUI/ipLanding.app?apvId=04tDn000000JJWcIAO" target="_blank" class="btn btn-primary mb-3">Install Pulse Tool</a>
+        <h1 class="border-bottom border-primary border-1">Installation Guide</h1>
+        <p>Follow along with the video below to see how install and setup the Pulse Tool within your Salesforce instance.</p>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/AaQJygkle2E" title="Pulse Tool Demo Video" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    {% include 'components/sidebar.html' %}
+  </div>
+</div>
+{% endblock content %}

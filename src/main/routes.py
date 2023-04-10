@@ -1,4 +1,5 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, redirect, url_for
+from src.main.util import append_email_to_google_sheet
 
 main = Blueprint('main', __name__)
 
@@ -18,3 +19,14 @@ def pulsetool():
 @main.route('/products')
 def products():
     return render_template("main/products.html", title='Products')
+
+@main.route('/capture_email', methods=['POST'])
+def capture_email():
+    email = request.form['email']
+    append_email_to_google_sheet(email)
+    return redirect(url_for('main.install_app'))
+
+@main.route('/install_app')
+def install_app():
+    # Render the app install page
+    return render_template('main/install_app.html')
