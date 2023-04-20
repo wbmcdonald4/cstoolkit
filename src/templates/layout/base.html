@@ -3,9 +3,9 @@
   <head>
     {% include 'layout/head.html' %}
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     {% include 'layout/header.html' %}
-    <main class="bg-light">
+    <main class="bg-light flex-grow-1">
       {% block content %}
       {% endblock content %}
     </main>
