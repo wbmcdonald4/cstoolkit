@@ -16,15 +16,21 @@ def about():
 def pulsetool():
     return render_template("main/pulsetool.html", title='Pulse Tool')
 
-@main.route('/products')
-def products():
-    return render_template("main/products.html", title='Products')
+@main.route('/onboardingtool')
+def onboardingtool():
+    return render_template("main/onboardingtool.html", title='Onboarding Tool')
 
 @main.route('/capture_email', methods=['POST'])
 def capture_email():
     email = request.form['email']
     append_email_to_google_sheet(email)
     return redirect(url_for('main.install_app'))
+
+@main.route('/capture_onboarding_email', methods=['POST'])
+def capture_onboarding_email():
+    email = request.form['email']
+    append_email_to_google_sheet(email)
+    return redirect(url_for('main.home'))
 
 @main.route('/install_app')
 def install_app():
