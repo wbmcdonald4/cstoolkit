@@ -1,5 +1,5 @@
 <div class="row align-items-stretch py-2" style="display: flex;">
-  <div class="col-md-6 mb-3 mb-md-0 d-flex" >
+  <a href="{{ url_for('main.pulsetool') }}" class="col-md-6 mb-3 mb-md-0 d-flex text-decoration-none" style="color: inherit;">
     <div class="card-box w-100">
       <div class="label-green">
         <span class="label-text">Beta</span>
@@ -10,15 +10,13 @@
         </div>
         <p style="margin-bottom: 20px;">Gain insights into client needs with our Pulse Tool, a simple and effective customer sentiment monitoring solution, directly within Salesforce.</p>
       </div>
-      <div>
-        <a href="{{ url_for('main.pulsetool') }}" class="d-flex align-items-center" style="text-decoration: none;">
+      <div class="d-flex align-items-center">
           <span class="button-text">Get Started</span>
           <i class="bi bi-arrow-right"></i>
-        </a>
       </div>
     </div>
-  </div>
-  <div class="col-md-6 mb-3 mb-md-0 d-flex" >
+  </a>
+  <a href="{{ url_for('main.onboardingtool') }}" class="col-md-6 mb-3 mb-md-0 d-flex text-decoration-none" style="color: inherit;">
     <div class="card-box w-100"> 
       <div class="label-yellow">
         <span class="label-text">In Development</span>
@@ -29,12 +27,10 @@
         </div>
         <p style="margin-bottom: 20px;">A Salesforce-integrated tool to track and optimize customer onboarding, ensuring a seamless and efficient experience.</p>
       </div>
-      <div>
-        <a href="{{ url_for('main.onboardingtool') }}" class="d-flex align-items-center" style="text-decoration: none;">
-          <span class="button-text">Learn More</span>
-          <i class="bi bi-arrow-right"></i>
-        </a>
-      </div>  
+      <div href="{{ url_for('main.onboardingtool') }}" class="d-flex align-items-center">
+        <span class="button-text">Learn More</span>
+        <i class="bi bi-arrow-right"></i>
+      </div>
     </div>
-  </div>
+  </a>
 </div>
