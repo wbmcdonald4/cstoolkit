@@ -1,22 +1,36 @@
-<div class="row align-items-md-stretch py-2">
-  <div class="col-md-6 mb-3 mb-md-0">
-    <div class="h-100 bg-white border-top border-primary border-3 rounded-1 p-5 shadow-sm">
-      <div class="d-flex align-items-center">
-        <h2 class="mb-0">Pulse Tool</h2>
-        <span class="ms-2 text-muted small">(Beta)</span>
+<div class="row align-items-stretch py-2" style="display: flex;">
+  <a href="{{ url_for('main.pulsetool') }}" class="col-md-6 mb-3 mb-md-0 d-flex text-decoration-none" style="color: inherit;">
+    <div class="card-box w-100">
+      <div class="label-green">
+        <span class="label-text">Beta</span>
       </div>
-      <p>Gain insights into client needs with our Pulse Tool, a simple and effective customer sentiment monitoring solution, directly within Salesforce.</p>
-      <a href="{{ url_for('main.pulsetool') }}" class="btn btn-primary">Get Started</a>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="h-100 bg-white border-top border-primary border-3 rounded-1 p-5 shadow-sm">
-      <div class="d-flex align-items-center">
-        <h2 class="mb-0">Onboarding Tool</h2>
-        <span class="ms-2 text-muted small">(Coming Soon)</span>
+      <div class="card-content">
+        <div class="d-flex align-items-center">
+          <h2 class="mb-0" style="font-size: 2rem;">Pulse</h2>
+        </div>
+        <p style="margin-bottom: 20px;">Gain insights into client needs with our Pulse Tool, a simple and effective customer sentiment monitoring solution, directly within Salesforce.</p>
       </div>
-      <p>A Salesforce-integrated tool to track and optimize customer onboarding, ensuring a seamless and efficient experience.</p>
-      <a href="{{ url_for('main.onboardingtool') }}" class="btn btn-primary">How it Works</a>
+      <div class="d-flex align-items-center">
+          <span class="button-text">Get Started</span>
+          <i class="bi bi-arrow-right"></i>
+      </div>
     </div>
-  </div>
+  </a>
+  <a href="{{ url_for('main.onboardingtool') }}" class="col-md-6 mb-3 mb-md-0 d-flex text-decoration-none" style="color: inherit;">
+    <div class="card-box w-100"> 
+      <div class="label-yellow">
+        <span class="label-text">In Development</span>
+      </div>
+      <div class="card-content">
+        <div class="d-flex align-items-center">
+          <h2 class="mb-0" style="font-size: 2rem;">Onboard</h2>
+        </div>
+        <p style="margin-bottom: 20px;">A Salesforce-integrated tool to track and optimize customer onboarding, ensuring a seamless and efficient experience.</p>
+      </div>
+      <div href="{{ url_for('main.onboardingtool') }}" class="d-flex align-items-center">
+        <span class="button-text">Learn More</span>
+        <i class="bi bi-arrow-right"></i>
+      </div>
+    </div>
+  </a>
 </div>

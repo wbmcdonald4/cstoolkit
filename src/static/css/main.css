@@ -1,0 +1,149 @@
+.card-box {
+  background-color: #FFFFFF; 
+  border: 1px solid #131313; 
+  box-shadow: 4px 4px 0px #000000; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+
+  /* Add transition for smooth animation */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Increase box-shadow size on hover */
+.card-box:hover {
+  box-shadow: 6px 6px 0px #000000;
+}
+
+.card-content {
+    margin-bottom: auto;
+  }
+
+body {
+    font-family: 'Inter', sans-serif;
+  }
+
+h1 {
+    font-size: 58px;
+    font-weight: 600;
+    /* @media (max-width: 992px) {
+      font-size: 58px;
+    } */
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 600; 
+}
+
+p {
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    }
+
+
+.button-text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 29px;
+    color: #131313;
+}
+
+
+.bi {
+display: inline-block;
+vertical-align: middle;
+margin-left: 10px;
+font-size: 24px;
+color: #131313;
+}
+
+
+.label-green {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 8px;
+    position: absolute;
+    width: 52px;
+    height: 35px;
+    right: 16px;
+    top: 16px;
+    background: #6CF7B0;
+  }
+  
+  .label-yellow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 8px;
+    position: absolute;
+    width: 136px;
+    height: 35px;
+    right: 16px;
+    top: 16px;
+    background: #FCFF69;
+  }
+
+  .label-text {
+    height: 19px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #131313;
+  }
+
+  /* Define the pulse animation */
+  @keyframes pulse-arrow {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /* Apply the animation to the arrow on card hover */
+  .card-box:hover .bi-arrow-right {
+    animation: pulse-arrow 1s infinite;
+  }
+
+/* Figma CSS */
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 483px;
+  height: 38px;
+}
+
+/* Underline on hover */
+.custom-nav-link:hover {
+  border-bottom: 1px solid #131313;
+  padding-bottom: 8px;
+}
+
+/* Underline on active page */
+.nav-item .active {
+  border-bottom: 1px solid #131313;
+  padding-bottom: 8px;
+}
