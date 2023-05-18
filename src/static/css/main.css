@@ -46,6 +46,27 @@ p {
     line-height: 32px;
     }
 
+.card-content p {
+  left: 16px;
+  top: 92px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: #131313;
+}
+
+.pulse-content {
+  left: 16px;
+  top: 92px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: #131313;
+}
 
 .button-text {
     font-family: 'Inter', sans-serif;
@@ -146,4 +167,33 @@ color: #131313;
 .nav-item .active {
   border-bottom: 1px solid #131313;
   padding-bottom: 8px;
+}
+
+.custom-input {
+  height: 48px;
+  padding: 0 20px; /* optional - add padding if you want the text to be indented */
+  border-radius: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.custom-button {
+  height: 48px;
+  padding: 0 20px; /* adjust as needed to make the button wider */
+  border: none; /* removes the default button border */
+  border-radius: 0;
+  background-color: #000000;
+  color: #ffffff; /* change this to the color you want for the button text */
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #333333; /* change this to the color you want on hover */
+  text-decoration: none;
+  color: #ffffff; /* keeps the text color the same on hover */
 }

@@ -12,9 +12,9 @@ def home():
 def about():
     return render_template("main/about.html", title='About')
 
-@main.route('/pulsetool')
-def pulsetool():
-    return render_template("main/pulsetool.html", title='Pulse Tool')
+@main.route('/pulse')
+def pulse():
+    return render_template("main/pulse.html", title='Pulse Tool')
 
 @main.route('/onboardingtool')
 def onboardingtool():
