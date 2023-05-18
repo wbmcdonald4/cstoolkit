@@ -1,6 +1,6 @@
 {% extends "layout/base.html" %}
 {% block content %}
-<div class="container py-5">
+<!-- <div class="container py-5">
   <div class="row">
     <div class="col">
       <div class="bg-white border-top border-primary border-3 rounded-1 my-3 py-3 px-5 shadow-sm">
@@ -11,6 +11,43 @@
         <p>Follow along with the video below to see how install and setup the Pulse Tool within your Salesforce instance.</p>
         <div class="ratio ratio-16x9">
           <iframe src="https://www.youtube.com/embed/AaQJygkle2E" title="Pulse Tool Demo Video" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="container">
+  <div class="row py-4">
+    <div class="col-lg-6">
+      <div class="p-2 bg-light rounded-3">
+        <div class="container-fluid">
+          <h1>Install Pulse Tool</h1>
+          <p class="pulse-content">Thank you for providing your email. Click the button below to install the Pulse Tool onto your Salesforce instance:</p>
+          <div class="column">
+            <a href="https://login.salesforce.com/packagingSetupUI/ipLanding.app?apvId=04tDn000000JJWcIAO" target="_blank">
+              <button class="custom-button">Install Pulse Tool</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="p-2 bg-light rounded-3">
+        <div class="container-fluid">
+          <img src="{{ url_for('static', filename='images/pulse-image.png') }}" alt="Pulse Image" class="img-fluid" style="max-height: 400px; width: auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-lg-12">
+      <div class="p-2 bg-light rounded-3">
+        <div class="container-fluid">
+          <h2>Installation Guide</h2>
+          <p class="pulse-content">Follow along with the video below to see how install and setup the Pulse Tool within your Salesforce instance.</p>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/AaQJygkle2E" title="Pulse Installation Guide" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
