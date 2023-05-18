@@ -1,10 +1,8 @@
-<form action="{{ url_for('main.capture_email') }}" method="post" id="email-capture-form">
-  <div class="row mb-3">
-    <div class="col-12 col-md">
-      <input type="email" class="form-control mb-2 mb-md-0" name="email" placeholder="Enter your email" required>
-    </div>
-    <div class="col-12 col-md-auto">
-      <button type="submit" class="btn btn-primary w-100">Get Access to App</button>
-    </div>
+<form action="{{ url_for('main.capture_email') }}" method="post" id="email-capture-form" class="d-flex flex-column flex-md-row gap-3">
+  <div class="flex-fill">
+    <input type="email" class="form-control custom-input" name="email" placeholder="Enter your email" required>
+  </div>
+  <div class="d-flex">
+    <button type="submit" class="custom-button w-100">Get Access to App</button>
   </div>
 </form>
