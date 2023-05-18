@@ -16,9 +16,9 @@ def about():
 def pulse():
     return render_template("main/pulse.html", title='Pulse Tool')
 
-@main.route('/onboardingtool')
-def onboardingtool():
-    return render_template("main/onboardingtool.html", title='Onboarding Tool')
+@main.route('/onboard')
+def onboard():
+    return render_template("main/onboard.html", title='Onboarding Tool')
 
 @main.route('/capture_email', methods=['POST'])
 def capture_email():
