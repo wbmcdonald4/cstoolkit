@@ -197,3 +197,11 @@ color: #131313;
   text-decoration: none;
   color: #ffffff; /* keeps the text color the same on hover */
 }
+
+@media (max-width: 1000px) {
+  .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
