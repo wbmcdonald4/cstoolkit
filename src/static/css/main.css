@@ -148,14 +148,10 @@ p {
 /* Figma CSS */
 .navbar-nav {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
-  align-items: flex-start;
-  padding: 0px;
   gap: 24px;
-  width: 483px;
-  height: 38px;
 }
+
 
 /* Underline on hover */
 .custom-nav-link:hover {
@@ -203,5 +199,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: start;
   }
 }
