@@ -20,31 +20,31 @@
 
 .card-content {
     margin-bottom: auto;
-  }
+}
 
 body {
-    font-family: 'Inter', sans-serif;
-  }
+  font-family: 'Inter', sans-serif;
+}
 
 h1 {
+  font-size: 58px;
+  font-weight: 600;
+  /* @media (max-width: 992px) {
     font-size: 58px;
-    font-weight: 600;
-    /* @media (max-width: 992px) {
-      font-size: 58px;
-    } */
+  } */
 }
 
 h2 {
-    font-size: 48px;
-    font-weight: 600; 
+  font-size: 48px;
+  font-weight: 600; 
 }
 
 p {
-    font-family: 'Inter',sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    }
+  font-family: 'Inter',sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
 
 .card-content p {
   left: 16px;
@@ -69,81 +69,81 @@ p {
 }
 
 .button-text {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 29px;
-    color: #131313;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+  color: #131313;
 }
 
 
 .bi {
-display: inline-block;
-vertical-align: middle;
-margin-left: 10px;
-font-size: 24px;
-color: #131313;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  font-size: 24px;
+  color: #131313;
 }
 
 
 .label-green {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding: 8px;
-    gap: 8px;
-    position: absolute;
-    width: 52px;
-    height: 35px;
-    right: 16px;
-    top: 16px;
-    background: #6CF7B0;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 8px;
+  gap: 8px;
+  position: absolute;
+  width: 52px;
+  height: 35px;
+  right: 16px;
+  top: 16px;
+  background: #6CF7B0;
+}
   
-  .label-yellow {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding: 8px;
-    gap: 8px;
-    position: absolute;
-    width: 136px;
-    height: 35px;
-    right: 16px;
-    top: 16px;
-    background: #FCFF69;
-  }
+.label-yellow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 8px;
+  gap: 8px;
+  position: absolute;
+  width: 136px;
+  height: 35px;
+  right: 16px;
+  top: 16px;
+  background: #FCFF69;
+}
 
-  .label-text {
-    height: 19px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #131313;
-  }
+.label-text {
+  height: 19px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #131313;
+}
 
-  /* Define the pulse animation */
-  @keyframes pulse-arrow {
-    0% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(5px);
-    }
-    100% {
-      transform: translateX(0);
-    }
+/* Define the pulse animation */
+@keyframes pulse-arrow {
+  0% {
+    transform: translateX(0);
   }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
-  /* Apply the animation to the arrow on card hover */
-  .card-box:hover .bi-arrow-right {
-    animation: pulse-arrow 1s infinite;
-  }
+/* Apply the animation to the arrow on card hover */
+.card-box:hover .bi-arrow-right {
+  animation: pulse-arrow 1s infinite;
+}
 
 /* Figma CSS */
 .navbar-nav {
