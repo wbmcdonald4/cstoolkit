@@ -68,6 +68,16 @@ p {
   color: #131313;
 }
 
+.customer-content {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: #131313;
+  text-align: center;
+}
+
 .button-text {
   font-family: 'Inter', sans-serif;
   font-style: normal;
