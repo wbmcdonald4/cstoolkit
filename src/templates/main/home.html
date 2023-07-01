@@ -81,4 +81,45 @@
     </div>
   </div>
 </div>
+<div class="bg-light" style="border-top: 1px solid;">
+  <div class="container">
+    <div class="row my-3">
+      <h2 class="m-3" style="font-size: 2rem;">What users are saying</h2>
+      <div class="col-lg-4 pt-5 px-3">
+        <img src="{{ url_for('static', filename='images/mattbell.png') }}" class="overlap-image" alt="Description of the image">
+        <div class="box-class">
+          <div class="box-class-content">
+            This tool is a no brainer for any growing company that has invested in Salesforce.
+          </div>
+          <div class="box-class-content-footer">
+            <strong>Matt Bell</strong>, Founder, Fantazscores
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 pt-5 px-3">
+        <img src="{{ url_for('static', filename='images/roberta.png') }}" class="overlap-image" alt="Description of the image">
+        <div class="box-class">
+          <div class="box-class-content">
+            We want to keep everything in Salesforce, so this was a better option than doing another integration.
+          </div>
+          <div class="box-class-content-footer">
+            <strong>Roberta Montenuto</strong>, CEO, Fittes
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 pt-5 px-3">
+        <img src="{{ url_for('static', filename='images/bryn.png') }}" class="overlap-image" alt="Description of the image">
+        <div class="box-class">
+          <div class="box-class-content">
+            This tool is well designed and keeps things simple. Time and money are impotant now more than ever.
+          </div>
+          <div class="box-class-content-footer">
+            <strong>Bryn Jones</strong>, CEO, PartnerStack
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock content %}
