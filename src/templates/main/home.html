@@ -15,37 +15,37 @@
       </div>
     </div>
   </div>
-  <div style="border-top: 1px solid;">
+  <div class="section-border">
     <div class="container">
       <div class="row my-3">
         <div class="rounded-3">
           <div class="d-flex flex-column justify-content-center align-items-center">
             <p class="customer-content m-4">Join these companies who have chosen the simple approach</p>
             <div class="d-flex flex-lg-row flex-column justify-content-center m-1">
-              <img src="{{ url_for('static', filename='images/fantazscores.svg') }}" alt="FantaZscores Logo" class="img-fluid m-3" style="max-height: 50px; width: auto;">
-              <img src="{{ url_for('static', filename='images/fittes-logo.svg') }}" alt="Fittes Logo" class="img-fluid m-3" style="max-height: 50px; width: auto;">
-              <img src="{{ url_for('static', filename='images/propcheck-logo.svg') }}" alt="PropCheck Logo" class="img-fluid m-3" style="max-height: 50px; width: auto;">
+              <img src="{{ url_for('static', filename='images/fantazscores.svg') }}" alt="FantaZscores Logo" class="img-fluid m-3 company-logo-size">
+              <img src="{{ url_for('static', filename='images/fittes-logo.svg') }}" alt="Fittes Logo" class="img-fluid m-3 company-logo-size">
+              <img src="{{ url_for('static', filename='images/propcheck-logo.svg') }}" alt="PropCheck Logo" class="img-fluid m-3 company-logo-size">
             </div>
           </div>        
         </div>
       </div>
     </div>
   </div>
-  <div class="bg-light" style="border-top: 1px solid;">
+  <div class="bg-light section-border">
     <div class="container">
-      <h2 class="mt-3" style="font-size: 2rem;">Our Products</h2>
+      <h2 class="mt-3 h2-header-class">Our Products</h2>
       {% include 'components/cards.html' %}
     </div>
   </div>
 </div>
-<div style="border-top: 1px solid;">
+<div class="section-border">
   <div class="container">
     <div class="row my-3">
-      <h2 class="my-3" style="font-size: 2rem;">How our products can help</h2>
+      <h2 class="my-3 h2-header-class">How our products can help</h2>
       <div class="col-lg-3">
         <div class="p-2">
           <div class="container-fluid">
-            <span class="material-symbols-outlined" style="font-size: 48px; color: #5E5AFF;">bar_chart</span>
+            <span class="material-symbols-outlined material-symbol-style">bar_chart</span>
             <h5><strong>Quality Reporting</strong></h5>
             <p>Improve CS management</p>
           </div>
@@ -54,7 +54,7 @@
       <div class="col-lg-3">
         <div class="p-2">
           <div class="container-fluid">
-            <span class="material-symbols-outlined" style="font-size: 48px; color: #5E5AFF;">schedule</span>
+            <span class="material-symbols-outlined material-symbol-style">schedule</span>
             <h5><strong>Time Saving</strong></h5>
             <p>Less time on implementation</p>
           </div>
@@ -63,7 +63,7 @@
       <div class="col-lg-3">
         <div class="p-2">
           <div class="container-fluid">
-            <span class="material-symbols-outlined" style="font-size: 48px; color: #5E5AFF; position: relative; left: -12px;">attach_money</span>
+            <span class="material-symbols-outlined material-symbol-style material-money-position">attach_money</span>
             <h5><strong>Cost Efficiency</strong></h5>
             <p>Save money on existing tools</p>
           </div>
@@ -72,7 +72,7 @@
       <div class="col-lg-3">
         <div class="p-2">
           <div class="container-fluid">
-            <span class="material-symbols-outlined" style="font-size: 48px; color: #5E5AFF; position: relative; left: -7px;">fullscreen</span>
+            <span class="material-symbols-outlined material-symbol-style material-fullscreen-position">fullscreen</span>
             <h5><strong>Uniformity</strong></h5>
             <p>Keep all data in one place</p>
           </div>
@@ -81,10 +81,10 @@
     </div>
   </div>
 </div>
-<div class="bg-light" style="border-top: 1px solid;">
+<div class="bg-light section-border">
   <div class="container">
     <div class="row my-3">
-      <h2 class="m-3" style="font-size: 2rem;">What users are saying</h2>
+      <h2 class="m-3 h2-header-class">What users are saying</h2>
       <div class="col-lg-4 pt-5 px-3">
         <img src="{{ url_for('static', filename='images/mattbell.png') }}" class="overlap-image" alt="Description of the image">
         <div class="box-class">
@@ -121,5 +121,4 @@
     </div>
   </div>
 </div>
-
 {% endblock content %}

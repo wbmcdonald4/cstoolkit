@@ -297,3 +297,30 @@ p {
   flex-direction: column;
   align-items: flex-start;
 }
+
+.section-border {
+  border-top: 1px solid;
+}
+
+.h2-header-class {
+  font-size: 2rem;
+}
+
+.material-symbol-style {
+  font-size: 48px; 
+  color: #5E5AFF; 
+  position: relative; 
+}
+
+.material-money-position {
+  left: -12px;
+}
+
+.material-fullscreen-position {
+  left: -7px;
+}
+
+.company-logo-size {
+  max-height: 50px;
+  width: auto;
+}
