@@ -1,31 +1,20 @@
 {% extends "layout/base.html" %}
 {% block content %}
-<div class="container">
-  <div class="row py-4">
-    <div class="col-lg-6">
-      <div class="p-2 bg-light rounded-3">
-        <div class="container-fluid">
-          <h1>Onboard</h1>
-          <p class="pulse-content">Track and optimize customer onboarding, ensuring a seamless and efficient experience integrated with Salesforce</p>
+<div class="container-fluid m-0 p-0">
+  <div class="bg-light">
+    <div class="container pt-3 pb-5">
+      <div class="row">
+        {% include 'components/onboard/banner-section.html' %}
+        <div class="col-6 mt-3">
+          {% include 'forms/onboarding_email_form.html' %}
         </div>
       </div>
     </div>
-    <!-- <div class="col-lg-6">
-      <div class="p-2 bg-light rounded-3">
-        <div class="container-fluid">
-          <img src="{{ url_for('static', filename='images/pulse-image.png') }}" alt="Pulse Image" class="img-fluid" style="max-height: 400px; width: auto;">
-        </div>
-      </div>
-    </div> -->
   </div>
-  <div class="row mb-5">
-    <div class="col-lg-12">
-      <div class="p-2 bg-light rounded-3">
-        <div class="container-fluid">
-          <h2>Sign up for Beta</h2>
-          <p class="pulse-content">This tool is currently in development, expected Beta release will be July 1, 2023.</p>
-          {% include 'forms/onboarding_email_form.html' %}
-        </div>
+  <div class="section-border">
+    <div class="container py-5">
+      <div class="row">
+        {% include 'components/onboard/feedback-section.html' %}
       </div>
     </div>
   </div>

@@ -219,26 +219,29 @@ p {
   }
 }
 
-.user-container {
-  display: flex;
-  padding: 64px 0px 0px 0px;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .box-class {
+  position: relative;
   display: flex;
-  width: 392px;
-  padding: 60px 24px 24px 24px;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 24px;
   border: 1px solid #000;
   background: #FFF;
-  position: relative;
-  z-index: 99;
+  padding: 24px;
   height: 100%;
+}
+
+.box-class .thumbnail-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  left: 30px;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
 .box-class-content {
@@ -246,10 +249,6 @@ p {
   font-size: 24px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  display: flex;
-  width: 344px;
-  flex-direction: column;
-  flex: 1 1 auto;
 }
 
 .box-class-content-footer {
@@ -259,12 +258,26 @@ p {
   font-weight: 500;
 }
 
-.overlap-image {
-  position: absolute;
-  z-index: 100;
-  margin-top: -50px;
-  margin-left: -5px;
-} 
+@media (max-width: 1199px) {
+  .box-class {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .box-class .thumbnail-image {
+    top: -30px;
+    left: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .box-class {
+    padding: 16px;
+  }
+}
+
 
 .footer-class {
   background-color: #5E5AFF;
@@ -273,7 +286,6 @@ p {
 }
 
 .footer-link {
-  margin-left: 32px;
   color: #000;
   text-decoration: none;
   font-size: 24px;
@@ -289,7 +301,6 @@ p {
   font-size: 24px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  margin-left: 24px;
 }
 
 .footer-links {
@@ -306,10 +317,26 @@ p {
   font-size: 2rem;
 }
 
+/* benefits section */
+
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.benefit-item p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
 .material-symbol-style {
-  font-size: 48px; 
-  color: #5E5AFF; 
-  position: relative; 
+  font-size: 48px !important;
+  color: #5E5AFF;
+  position: relative;
 }
 
 .material-money-position {
@@ -320,7 +347,197 @@ p {
   left: -7px;
 }
 
+@media (min-width: 992px) {
+  .benefit-item {
+    align-items: flex-start;
+  }
+  .col-12.col-md-12.col-lg-3.text-center.text-lg-start {
+    text-align: start;
+  }
+}
+
+/* logo section */
+
 .company-logo-size {
   max-height: 50px;
   width: auto;
+}
+
+.custom-margin {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.pricing-container {
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  padding: 0;
+}
+
+.pricing-header {
+  display: flex;
+  padding: 8px 24px;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  border: 1px solid #000;
+  background: #1E1E1E;
+  color: #FFF;
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  text-align: left;
+}
+
+.pricing-body {
+  color: #131313;
+  text-align: left;
+  font-size: 48px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  padding: 0px 24px;
+}
+
+.pricing-subheader {
+  color: #5E5AFF;
+  text-align: left;
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 0px 10px 20px 24px;
+}
+
+@media (max-width: 767px) {
+  .pricing-container {
+    flex: none;
+  }
+}
+
+.feature-container-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+
+.material-icons.md-80 {
+  width: 80px;
+  height: 80px;
+  font-size: 80px;
+  margin-right: 15px; 
+  color: #5E5AFF;
+}
+
+.feature-header {
+  color: #131313;
+  font-size: 30px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px; 
+}
+
+.feature-body {
+  color: #131313;
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.custom-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.salesforce-logo {
+  max-height: 200px;
+}
+
+.video-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.onboard-button {
+  width: 50%;
+}
+
+.onboard-container {
+  display: flex;
+  justify-content: center;
+}
+
+.onboard-content {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: #131313;
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.contact-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.contact-flex-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.map-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 75%; /* Adjust this value to change the aspect ratio of the map */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.navbar-padding {
+  padding-top: 70px; /* This is for large screens */
+}
+
+@media (max-width: 992px) { /* Adjust this value based on when your navbar collapses */
+  .navbar-padding {
+    padding-top: 55px; /* This is for smaller screens when navbar becomes a hamburger menu. Adjust this value based on the actual height of your navbar in its collapsed state. */
+  }
 }

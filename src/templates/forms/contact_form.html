@@ -1,11 +1,11 @@
-<form action="{{ url_for('main.capture_onboarding_email') }}" method="post" id="onboarding-email-form" class="d-flex flex-column gap-3">
+<form action="{{ url_for('main.capture_onboarding_email') }}" method="post" id="onboarding-email-form" class="d-flex flex-column gap-3 my-3">
     <div class="mb-3">
       <input type="email" class="form-control custom-input" name="email" placeholder="Enter your email" required>
     </div>
     <div class="mb-3">
-      <textarea class="form-control custom-input" name="message" style="height: 200px; padding-top: 5px;" placeholder="Enter your message" required></textarea>
+      <textarea class="form-control custom-input" name="message" style="height: 100px; padding-top: 5px;" placeholder="Enter your message" required></textarea>
     </div>
     <div>
-      <button type="submit" class="custom-button w-100">Send Email</button>
+      <button type="submit" class="custom-button w-100">Contact Us</button>
     </div>
 </form>

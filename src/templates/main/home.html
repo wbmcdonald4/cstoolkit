@@ -2,122 +2,38 @@
 {% block content %}
 <div class="container-fluid m-0 p-0">
   <div class="bg-light">
-    <div class="container">
-      <div class="row py-4">
-        <div class="col-lg-6">
-          <div class="bg-light rounded-3">
-            <div >
-              <h1>Drive results through reliable insights.</h1>
-              <p class="pulse-content">CS Toolkit provides affordable and intuitive customer success solutions, alleviating the burdens of high implementation costs and learning new systems.</p>
-            </div>
-          </div>
-        </div>
+    <div class="container pt-3 pb-5">
+      <div class="row">
+        {% include 'components/home/banner-section.html' %}
       </div>
     </div>
   </div>
   <div class="section-border">
-    <div class="container">
-      <div class="row my-3">
-        <div class="rounded-3">
-          <div class="d-flex flex-column justify-content-center align-items-center">
-            <p class="customer-content m-4">Join these companies who have chosen the simple approach</p>
-            <div class="d-flex flex-lg-row flex-column justify-content-center m-1">
-              <img src="{{ url_for('static', filename='images/fantazscores.svg') }}" alt="FantaZscores Logo" class="img-fluid m-3 company-logo-size">
-              <img src="{{ url_for('static', filename='images/fittes-logo.svg') }}" alt="Fittes Logo" class="img-fluid m-3 company-logo-size">
-              <img src="{{ url_for('static', filename='images/propcheck-logo.svg') }}" alt="PropCheck Logo" class="img-fluid m-3 company-logo-size">
-            </div>
-          </div>        
-        </div>
+    <div class="container py-5">
+      <div class="row">
+        {% include 'components/home/logo-section.html' %}
       </div>
     </div>
   </div>
   <div class="bg-light section-border">
-    <div class="container">
-      <h2 class="mt-3 h2-header-class">Our Products</h2>
-      {% include 'components/cards.html' %}
+    <div class="container py-5">
+      <div class="row" >
+        {% include 'components/home/product-section.html' %}
+      </div>
     </div>
   </div>
 </div>
 <div class="section-border">
-  <div class="container">
-    <div class="row my-3">
-      <h2 class="my-3 h2-header-class">How our products can help</h2>
-      <div class="col-lg-3">
-        <div class="p-2">
-          <div class="container-fluid">
-            <span class="material-symbols-outlined material-symbol-style">bar_chart</span>
-            <h5><strong>Quality Reporting</strong></h5>
-            <p>Improve CS management</p>
-          </div>
-        </div>        
-      </div>
-      <div class="col-lg-3">
-        <div class="p-2">
-          <div class="container-fluid">
-            <span class="material-symbols-outlined material-symbol-style">schedule</span>
-            <h5><strong>Time Saving</strong></h5>
-            <p>Less time on implementation</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="p-2">
-          <div class="container-fluid">
-            <span class="material-symbols-outlined material-symbol-style material-money-position">attach_money</span>
-            <h5><strong>Cost Efficiency</strong></h5>
-            <p>Save money on existing tools</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="p-2">
-          <div class="container-fluid">
-            <span class="material-symbols-outlined material-symbol-style material-fullscreen-position">fullscreen</span>
-            <h5><strong>Uniformity</strong></h5>
-            <p>Keep all data in one place</p>
-          </div>
-        </div>
-      </div>
+  <div class="container py-5">
+    <div class="row">
+      {% include 'components/home/benefits-section.html' %}
     </div>
   </div>
 </div>
 <div class="bg-light section-border">
-  <div class="container">
-    <div class="row my-3">
-      <h2 class="m-3 h2-header-class">What users are saying</h2>
-      <div class="col-lg-4 pt-5 px-3">
-        <img src="{{ url_for('static', filename='images/mattbell.png') }}" class="overlap-image" alt="Description of the image">
-        <div class="box-class">
-          <div class="box-class-content">
-            This tool is a no brainer for any growing company that has invested in Salesforce.
-          </div>
-          <div class="box-class-content-footer">
-            <strong>Matt Bell</strong>, Founder, Fantazscores
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 pt-5 px-3">
-        <img src="{{ url_for('static', filename='images/roberta.png') }}" class="overlap-image" alt="Description of the image">
-        <div class="box-class">
-          <div class="box-class-content">
-            We want to keep everything in Salesforce, so this was a better option than doing another integration.
-          </div>
-          <div class="box-class-content-footer">
-            <strong>Roberta Montenuto</strong>, CEO, Fittes
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 pt-5 px-3">
-        <img src="{{ url_for('static', filename='images/bryn.png') }}" class="overlap-image" alt="Description of the image">
-        <div class="box-class">
-          <div class="box-class-content">
-            This tool is well designed and keeps things simple. Time and money are impotant now more than ever.
-          </div>
-          <div class="box-class-content-footer">
-            <strong>Bryn Jones</strong>, CEO, PartnerStack
-          </div>
-        </div>
-      </div>
+  <div class="container py-5">
+    <div class="row">
+      {% include 'components/home/testimonials.section.html' %}
     </div>
   </div>
 </div>
