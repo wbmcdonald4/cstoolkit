@@ -319,10 +319,26 @@ p {
   font-size: 2rem;
 }
 
+/* benefits section */
+
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.benefit-item p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
 .material-symbol-style {
   font-size: 48px !important;
-  color: #5E5AFF; 
-  position: relative; 
+  color: #5E5AFF;
+  position: relative;
 }
 
 .material-money-position {
@@ -332,6 +348,18 @@ p {
 .material-fullscreen-position {
   left: -7px;
 }
+
+@media (min-width: 992px) {
+  .benefit-item {
+    align-items: flex-start;
+  }
+  .col-12.col-md-12.col-lg-3.text-center.text-lg-start {
+    text-align: start;
+  }
+}
+
+
+/* logo section */
 
 .company-logo-size {
   max-height: 50px;
