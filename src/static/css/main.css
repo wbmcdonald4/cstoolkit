@@ -219,26 +219,29 @@ p {
   }
 }
 
-.user-container {
-  display: flex;
-  padding: 64px 0px 0px 0px;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .box-class {
+  position: relative;
   display: flex;
-  width: 392px;
-  padding: 60px 24px 24px 24px;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 24px;
   border: 1px solid #000;
   background: #FFF;
-  position: relative;
-  z-index: 99;
+  padding: 24px;
   height: 100%;
+}
+
+.box-class .thumbnail-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  left: 30px;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
 .box-class-content {
@@ -246,10 +249,6 @@ p {
   font-size: 24px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  display: flex;
-  width: 344px;
-  flex-direction: column;
-  flex: 1 1 auto;
 }
 
 .box-class-content-footer {
@@ -259,12 +258,26 @@ p {
   font-weight: 500;
 }
 
-.overlap-image {
-  position: absolute;
-  z-index: 100;
-  margin-top: -50px;
-  margin-left: -5px;
-} 
+@media (max-width: 1199px) {
+  .box-class {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .box-class .thumbnail-image {
+    top: -30px;
+    left: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .box-class {
+    padding: 16px;
+  }
+}
+
 
 .footer-class {
   background-color: #5E5AFF;
@@ -323,4 +336,9 @@ p {
 .company-logo-size {
   max-height: 50px;
   width: auto;
+}
+
+.custom-margin {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
