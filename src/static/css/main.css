@@ -286,7 +286,6 @@ p {
 }
 
 .footer-link {
-  margin-left: 32px;
   color: #000;
   text-decoration: none;
   font-size: 24px;
@@ -302,7 +301,6 @@ p {
   font-size: 24px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  margin-left: 24px;
 }
 
 .footer-links {
