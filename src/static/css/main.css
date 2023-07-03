@@ -370,3 +370,53 @@ p {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
+.pricing-container {
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Changed this back to flex-start */
+  flex: 1 0 0;
+  padding: 0;
+}
+
+.pricing-header {
+  display: flex;
+  padding: 8px 24px;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  border: 1px solid #000;
+  background: #1E1E1E;
+  color: #FFF;
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  text-align: left; /* Added this line */
+}
+
+.pricing-body {
+  color: #131313;
+  text-align: left; /* Changed this from center to left */
+  font-size: 48px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  padding: 0px 24px;
+}
+
+.pricing-subheader {
+  color: #5E5AFF;
+  text-align: left; /* Added this line */
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 0px 10px 20px 24px;
+}
+
+@media (max-width: 767px) {
+  .pricing-container {
+    flex: none;
+  }
+}
