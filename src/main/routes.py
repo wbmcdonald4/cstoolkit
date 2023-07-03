@@ -6,7 +6,13 @@ main = Blueprint('main', __name__)
 @main.route('/')
 @main.route('/home')
 def home():
-    return render_template("main/home.html", title='Home')
+    logos = [
+        'fantazscores', 
+        'fittes', 
+        'propcheck', 
+        'partnerstack'
+        ]
+    return render_template("main/home.html", title='Home', logos=logos)
 
 @main.route('/contact')
 def contact():

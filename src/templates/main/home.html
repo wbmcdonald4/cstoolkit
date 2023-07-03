@@ -22,9 +22,9 @@
           <div class="d-flex flex-column justify-content-center align-items-center">
             <p class="customer-content m-4">Join these companies who have chosen the simple approach</p>
             <div class="d-flex flex-lg-row flex-column justify-content-center m-1">
-              <img src="{{ url_for('static', filename='images/fantazscores.svg') }}" alt="FantaZscores Logo" class="img-fluid m-3 company-logo-size">
-              <img src="{{ url_for('static', filename='images/fittes-logo.svg') }}" alt="Fittes Logo" class="img-fluid m-3 company-logo-size">
-              <img src="{{ url_for('static', filename='images/propcheck-logo.svg') }}" alt="PropCheck Logo" class="img-fluid m-3 company-logo-size">
+              {% for logo in logos %}
+                <img src="{{ url_for('static', filename='images/customer_logos/' + logo + '-logo.svg') }}" alt="{{logo}} Logo" class="img-fluid m-3 company-logo-size">
+              {% endfor %}
             </div>
           </div>        
         </div>
