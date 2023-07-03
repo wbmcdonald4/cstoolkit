@@ -1,6 +1,6 @@
 <div class="rounded-3">
   <div class="d-flex flex-column justify-content-center align-items-center">
-    <p class="customer-content m-4">Join these companies who have chosen the simple approach</p>
+    <p class="customer-content mb-3">Join these companies who have chosen the simple approach</p>
     <div class="d-flex flex-lg-row flex-column justify-content-center m-1">
       {% for logo in logos %}
         <img src="{{ url_for('static', filename='images/customer_logos/' + logo + '-logo.svg') }}" alt="{{logo}} Logo" class="img-fluid m-3 company-logo-size">
