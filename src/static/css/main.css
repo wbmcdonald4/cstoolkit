@@ -472,3 +472,7 @@ p {
   max-width: 1000px;
   margin: auto;
 }
+
+.salesforce-logo {
+  max-height: 200px;
+}
