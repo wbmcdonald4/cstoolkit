@@ -20,11 +20,11 @@ def contact():
 
 @main.route('/pulse')
 def pulse():
-    return render_template("main/pulse.html", title='Pulse Tool')
+    return render_template("main/pulse.html", title='Pulse')
 
 @main.route('/onboard')
 def onboard():
-    return render_template("main/onboard.html", title='Onboarding Tool')
+    return render_template("main/onboard.html", title='Onboard')
 
 @main.route('/capture_email', methods=['POST'])
 def capture_email():
