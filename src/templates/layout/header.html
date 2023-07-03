@@ -1,8 +1,8 @@
 <header>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container">
       <a class="navbar-brand" href="{{ url_for('main.home') }}">
-        <img src="{{ url_for('static', filename='images/cstoolkit-logo.png') }}" alt="Logo" height="24" class="d-inline-block align-text-bottom">
+        <img src="{{ url_for('static', filename='images/cstoolkit_logos/cstoolkit-logo.svg') }}" alt="Logo" height="50" class="d-inline-block align-text-bottom">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -19,11 +19,11 @@
             <a class="nav-link custom-nav-link {{ 'active' if request.path == url_for('main.onboard') }}" href="{{ url_for('main.onboard') }}">Onboard</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link custom-nav-link {{ 'active' if request.path == url_for('main.contact') }}" href="{{ url_for('main.contact') }}">Contact</a>
+            <a class="nav-link custom-nav-link {{ 'active' if request.path == url_for('main.about') }}" href="{{ url_for('main.about') }}">About</a>
           </li>
           <li class="nav-item" style="line-height: normal;">
             <a class="nav-link" href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B4QS2EAN" target="_blank">
-              <img src="{{ url_for('static', filename='images/appexchange.svg') }}" alt="AppExchange Link" style="height: 50px; vertical-align: top;">
+              <img src="{{ url_for('static', filename='images/salesforce/appexchange.svg') }}" alt="AppExchange Link" style="height: 50px; vertical-align: top;">
             </a>
           </li>
         </ul>

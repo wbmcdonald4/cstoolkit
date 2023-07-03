@@ -531,3 +531,13 @@ p {
   height: 100%;
   border: 0;
 }
+
+.navbar-padding {
+  padding-top: 70px; /* This is for large screens */
+}
+
+@media (max-width: 992px) { /* Adjust this value based on when your navbar collapses */
+  .navbar-padding {
+    padding-top: 55px; /* This is for smaller screens when navbar becomes a hamburger menu. Adjust this value based on the actual height of your navbar in its collapsed state. */
+  }
+}
