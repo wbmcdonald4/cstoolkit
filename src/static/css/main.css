@@ -476,3 +476,8 @@ p {
 .salesforce-logo {
   max-height: 200px;
 }
+
+.video-container {
+  max-width: 1200px;
+  margin: auto;
+}
