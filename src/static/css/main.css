@@ -307,7 +307,7 @@ p {
 }
 
 .material-symbol-style {
-  font-size: 48px; 
+  font-size: 48px !important;
   color: #5E5AFF; 
   position: relative; 
 }
