@@ -363,6 +363,11 @@ p {
   width: auto;
 }
 
+.fantazscores-logo {
+  max-height: 40px;
+  width: auto;
+}
+
 .custom-margin {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -539,5 +544,39 @@ p {
 @media (max-width: 992px) { /* Adjust this value based on when your navbar collapses */
   .navbar-padding {
     padding-top: 55px; /* This is for smaller screens when navbar becomes a hamburger menu. Adjust this value based on the actual height of your navbar in its collapsed state. */
+  }
+}
+
+.purple-button {
+  display: flex;
+  padding: 8px 70px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  background: #5E5AFF;
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Inter', sans-serif; 
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  box-shadow: 2px 2px 0px #000000; 
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.purple-button:hover {
+  box-shadow: 4px 4px 0px #000000;
+}
+
+
+/* Custom CSS */
+h1.responsive-header {
+  font-size: 3rem;  /* Adjust to your preferred font size for small screens */
+}
+
+@media (min-width: 992px) {  /* This is the breakpoint for 'lg' screens */
+  h1.responsive-header {
+    font-size: 3.5rem;  /* Adjust to your preferred font size for 'lg' and larger screens */
   }
 }
