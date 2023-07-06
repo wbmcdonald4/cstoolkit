@@ -10,7 +10,7 @@ def home():
         'fantazscores', 
         'fittes', 
         'propcheck', 
-        'partnerstack'
+        # 'partnerstack'
         ]
     return render_template("main/home.html", title='Home', logos=logos)
 
