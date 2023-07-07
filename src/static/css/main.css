@@ -580,3 +580,7 @@ h1.responsive-header {
     font-size: 3.5rem;  /* Adjust to your preferred font size for 'lg' and larger screens */
   }
 }
+
+ul.custom-list {
+  padding-left: 20%; /* adjust as needed */
+}
