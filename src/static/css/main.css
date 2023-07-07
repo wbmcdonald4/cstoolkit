@@ -406,9 +406,9 @@ p {
 .pricing-body {
   color: #131313;
   text-align: left;
-  font-size: 48px;
+  font-size: 44px;
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   padding: 0px 24px;
 }
 
@@ -552,7 +552,7 @@ p {
   padding: 8px 70px;
   justify-content: center;
   align-items: center;
-  border: 2px solid #000;
+  border: 1px solid #000;
   background: #5E5AFF;
   color: #FFF;
   text-align: center;
