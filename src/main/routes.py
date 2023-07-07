@@ -27,23 +27,11 @@ def pulse():
 def onboard():
     return render_template("main/onboard.html", title='Onboard')
 
-@main.route('/capture_email', methods=['POST'])
-def capture_email():
-    email = request.form['email']
-    append_email_to_google_sheet(email)
-    return redirect(url_for('main.install_app'))
-
 @main.route('/capture_onboarding_email', methods=['POST'])
 def capture_onboarding_email():
     email = request.form['email']
     append_email_to_google_sheet(email)
     return redirect(url_for('main.home'))
-
-# obsolete
-@main.route('/install_app')
-def install_app():
-    # Render the app install page
-    return render_template('main/install_app.html')
 
 @main.route('/about')
 def about():
